@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OpenTrons SBTK</string>
+    <string name="app_version_name">Sam</string>
+    
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Controls</string>
+    <string name="title_section3">Configs</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="no_usb_host">USB host connectivity only supported in Android 3.1 and above.</string>
+    <string name="no_usb_accessory">USB accessory connectivity only supported in Android 2.3.4 and above.</string>
+    <string name="no_service">TinyG USB Service must be installed for USB support to work.</string>
+    
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices&#8230;</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    
+    <string name="alert_dialog_no_bt">Cannot use this application without bluetooth.</string>
+	<string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_turn_on_bt">This application needs the Bluetooth. Do you want turn on?</string>
+    <string name="alert_dialog_warning_title">Warning</string>
+    <string name="alert_dialog_yes">Yes</string>
+	<string name="alert_dialog_no">No</string>
+    
+	<string name="prefs_connection">Connections</string>
+	<string name="prefs_summ_connection">Connections setup</string>
+	<string name="prefs_motor">Motors</string>
+	<string name="prefs_summ_motor">Motor setup</string>
+	<string name="prefs_axis">Axis</string>
+	<string name="prefs_summ_axis">Axis setup</string>
+	<string name="prefs_system">System</string>
+	<string name="prefs_summ_system">System setup</string>
+	
+	<string name="debug_title">Debug Log</string>
+</resources>

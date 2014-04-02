@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <item type="id" name="connect">false</item>
+    <item type="id" name="settings">false</item>
+    <item type="id" name="about">false</item>
+    <item type="id" name="refresh">false</item>
+    
+    
+</resources>

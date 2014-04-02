@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <Preference
+    	android:title="@string/prefs_connection"
+    	android:summary="@string/prefs_summ_connection" >
+       <!--  <intent
+            android:targetPackage="com.nwags.BetaBot"
+            adnroid:targetClass="com.nwags.BetaBot.SettingsActivity"
+            android:action="com.nwags.BetaBot.PREFS_CONNECTION" >
+            </intent>   -->
+    </Preference>
+    
+    <Preference
+        android:title="@string/prefs_system"
+        android:summary="@string/prefs_summ_system" >
+	    <intent
+	        android:targetPackage="com.nwags.BetaBot"
+	        android:targetClass="com.nwags.BetaBot.SettingsActivity"
+	        android:action="com.nwags.BetaBot.PREFS_SYSTEM" >
+	    </intent>
+    </Preference>
+</PreferenceScreen>

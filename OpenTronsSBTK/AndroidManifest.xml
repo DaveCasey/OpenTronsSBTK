@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.opentrons.sbtk"
+    android:versionCode="1"
+    android:versionName="@string/app_version_name" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+    <uses-feature android:name="android.hardware.usb.accessory" android:required="false" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.opentrons.sbtk.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity 
+            android:name="com.opentrons.sbtk.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity 
+            android:name="com.opentrons.sbtk.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateHidden" ></activity>
+        <service 
+            android:name="com.opentrons.sbtk.USBAccessory.USBAccessoryService"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.opentrons.sbtk.USBAccessory.USBAccessoryService"/>
+            </intent-filter>
+        </service>
+        <service
+        	android:name="com.opentrons.sbtk.USBHost.USBHostService"
+        	android:label="@string/app_name">
+        <intent-filter>
+            <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+        </intent-filter>
+        <meta-data 
+            android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+            android:resource="@xml/usb_device_filter" />
+        </service>
+        <service android:name="com.opentrons.sbtk.Bluetooth.BluetoothSerialService">
+            <intent-filter>
+                <action android:name="com.opentrons.sbtk.Bluetooth.BluetoothSerialService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

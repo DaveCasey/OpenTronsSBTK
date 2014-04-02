@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference
+        android:entries="@array/connectionArrayLabels"
+        android:title="Connection"
+        android:key="connectionType"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:dialogTitle="Connection"
+        android:entryValues="@array/connectionArrayValues" />
+    <ListPreference 
+        android:entries="@array/baudLabels"
+        android:title="USBHost Baud"
+        android:key="baud"
+        android:summary="%s"
+        android:defaultValue="115200"
+        android:dialogTitle="Baud Rate"
+        android:entryValues="@array/baudLabels"/>
+	<CheckBoxPreference 
+	    android:title="@string/debug_title"
+	    android:key="debug"
+	    android:defaultValue="false" />
+</PreferenceScreen>
